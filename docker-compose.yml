@@ -8,6 +8,8 @@ services:
       NODE_ENV: production
     stdin_open: true
     network_mode: bridge
+    volumes:
+    - /var/data/konga:/app/kongadata
     tty: true
     links:
     - kong:kong
